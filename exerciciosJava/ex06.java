@@ -12,7 +12,8 @@ public class ex06 {
         System.out.println("olá , " + nome);
         System.out.println("CORRIGIU ALGUM BUG ? S/N ");
         String respBug = sc.next();
-        if (respBug == "S") {
+
+        if (respBug.equals("S")) { // Use .equals() here
             System.out.println("quantos bugs foram resolvidos: ? ");
             double respNumberBugs = sc.nextInt();
             double bonusBug = respNumberBugs * 200.00;
@@ -20,12 +21,9 @@ public class ex06 {
             double salarioBugs = salarioBase + bonusBug;
             System.out.println("o seu salario do mes é de " + salarioBugs);
 
-
         } else {
             double salariosemBug = 4500.0;
             System.out.println("o seu salario do mes é de " + salariosemBug);
-
-
         }
     }
 }
